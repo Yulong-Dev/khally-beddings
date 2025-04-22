@@ -235,7 +235,6 @@
     height: 10%;
     padding: 0;
     top: 0;
-    border: 2px solid #007bff;
 
   }
   .n
@@ -256,7 +255,6 @@
     text-decoration: none;
   }
   .logo{
-    border: 2px solid firebrick;
     margin-right: 6%;
   }
   .logo a{
@@ -376,7 +374,6 @@
   }
 
   .logo{
-    border: 2px solid firebrick;
     margin-right: 5%;
   }
  
