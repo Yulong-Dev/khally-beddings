@@ -1,0 +1,436 @@
+/* Home.css */
+.home{
+    width: 100%;
+    padding-top: 60px;
+}
+.first-home{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/H1.jpg);
+    width: 100%;
+    min-height: 85vh;
+    display: block;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+.first-home h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.first-home h1 span{
+    color: #f1c40f;
+    font-size: 60px;
+    font-weight: bold;
+}
+.first-home-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+}
+.first-home-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.first-home-links a:hover{
+    background-color: #f1c40f;
+    color: #222;
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
+}
+.second-home{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.bedsheet{
+    width: 47%;
+    min-height: 55vh;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.first-bedsheet{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/b1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.first-bedsheet:hover{
+    border-radius: 10px;
+    border: 2px solid gray;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.second-bedsheet{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/b2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.second-bedsheet:hover{
+    border-radius: 10px;
+    border: 2px solid gray;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.third-bedsheet{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/b3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.third-bedsheet:hover{
+    border-radius: 10px;
+    border: 2px solid gray;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.fourth-bedsheet{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/b4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fourth-bedsheet:hover{
+    border-radius: 10px;
+    border: 2px solid gray;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.bedsheet-description{
+    width: 45%;
+    min-height: 55vh;
+    align-content: center;
+    line-height: 2;
+}
+.third-home{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.pillow-description{
+    width: 45%;
+    min-height: 55vh;
+    justify-items: end;
+    align-content: center;
+    line-height: 2;
+}
+.pillow{
+    width: 47%;
+    min-height: 55vh;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.first-pillow{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/p1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.first-pillow:hover{
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.second-pillow{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/p2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.second-pillow:hover{
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.third-pillow{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/p3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.third-pillow:hover{
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.fourth-pillow{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/p4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fourth-pillow:hover{
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.fourth-home{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.towel{
+    width: 47%;
+    min-height: 55vh;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.first-towel{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/t1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.first-towel:hover{
+    border-radius: 10px;
+    border: 2px solid lightseagreen;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.second-towel{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/t2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.second-towel:hover{
+    border-radius: 10px;
+    border: 2px solid lightseagreen;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.third-towel{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/t3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.third-towel:hover{
+    border-radius: 10px;
+    border: 2px solid lightseagreen;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.fourth-towel{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/t4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fourth-towel:hover{
+    border-radius: 10px;
+    border: 2px solid lightseagreen;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.towel-description{
+    width: 45%;
+    min-height: 55vh;
+    align-content: center;
+    line-height: 2;
+}
+.fifth-home{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #f9f9f9;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.robe-description{
+    width: 45%;
+    min-height: 55vh;
+    justify-items: end;
+    align-content: center;
+    line-height: 2;
+}
+.robes{
+    width: 47%;
+    min-height: 55vh;
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.first-robe{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/r1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.first-robe:hover{
+    border-radius: 10px;
+    border: 2px solid lightsalmon;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.second-robe{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/r2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.second-robe:hover{
+    border-radius: 10px;
+    border: 2px solid lightsalmon;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.third-robe{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/r3.avif);
+    background-position: center;
+    background-size: cover;
+}
+.third-robe:hover{
+    border-radius: 10px;
+    border: 2px solid lightsalmon;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.fourth-robe{
+    min-width: 50%;
+    min-height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../assets/r4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fourth-robe:hover{
+    border-radius: 10px;
+    border: 2px solid lightsalmon;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.second-home a,.third-home a,.fourth-home a,.fifth-home a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f1c40f;
+}
+.second-home a:hover,.third-home a:hover,.fourth-home a:hover,.fifth-home a:hover{
+    background-color: #222;
+    color: #f1c40f;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 650px) {
+    .home{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .first-home h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .first-home h1 span{
+        color: #f1c40f;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .first-home h2{
+        font-size: 16px;
+    }
+    .first-home-links a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 17px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .first-home-links a:hover{
+        background-color: #f1c40f;
+        color: #222;
+        transform: scale(1.15);
+        transition: all 0.3s ease-in-out;
+    }
+    .second-home, .third-home, .fourth-home, .fifth-home {
+        display: block;
+        align-content: center;
+        justify-items: center;
+        min-height: 90vh;
+        padding-top: 20px;
+    }
+    .first-home-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 40px;
+    }
+    .towel, .pillow, .robes, .bedsheet {
+        width: 90%;
+    }
+    .towel-description, .pillow-description, .robe-description, .bedsheet-description {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+} 

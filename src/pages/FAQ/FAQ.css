@@ -1,0 +1,35 @@
+.faq-container {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+  
+  .faq-question:hover {
+    color: #007bff;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+  

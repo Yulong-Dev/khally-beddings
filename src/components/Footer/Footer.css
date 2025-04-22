@@ -1,0 +1,139 @@
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #f1c40f;
+  }
+  
+  .footer-logo p {
+    font-size: 16px;
+    color: #ddd;
+  }
+  
+  .footer-links h3,
+  .footer-social h3 {
+    font-size: 18px;
+    color: #f1c40f;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #f1c40f;
+  }
+  
+  .footer-social .social-icons a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social .social-icons a:hover {
+    color: #f1c40f;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #ddd;
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-social a {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 0;
+    }
+  
+ 
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links li a{
+      margin: 10px 0;
+      font-size: 0.7rem;
+    }
+  
+    .footer-contact p {
+      font-size: 12px;
+    }
+  
+    .social-icons  a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 15px 0;
+    }
+
+    .footer-logo h2 {
+      margin: 4px 0;
+      font-size: 0.9rem;
+      color: #f1c40f;
+    }
+    .footer-logo p {
+      font-size: 0.6rem;
+      color: #ddd;
+      max-width: 100px;
+    }
+  
+  
+    .footer-links a {
+      font-size: 0.8rem;
+      margin: 4px 0;
+    }
+  
+    .social-icons a {
+      font-size: 9px;
+    }
+  }
+  
