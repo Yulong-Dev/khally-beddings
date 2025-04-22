@@ -413,6 +413,7 @@
     }
     .second-home, .third-home, .fourth-home, .fifth-home {
         display: flex;
+        flex-direction: column;
         align-content: center;
         justify-items: center;
         min-height: 90vh;
@@ -420,7 +421,6 @@
     }
     .first-home-links{
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 50px;
