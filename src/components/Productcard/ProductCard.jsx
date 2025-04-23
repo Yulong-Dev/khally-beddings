@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useCart } from "../../Context/CartContext";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
+import { db } from "../../Context/firebase";
+import { collection, query, where, getDocs } from "firebase/firestore";
 
-
-const ProductCard = ({ product, rating = 0 }) => {
+const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
+  const [rating, setRating] = useState(0);
+
+  const fetchRating = async () => {
+    const q = query(
+      collection(db, "feedbacks"),
+      where("productId", "==", product.id)
+    );
+
+    const querySnapshot = await getDocs(q);
+    const feedbacks = querySnapshot.docs.map((doc) => doc.data());
+    
+    const average =
+      feedbacks.length > 0
+        ? feedbacks.reduce((sum, fb) => sum + fb.rating, 0) / feedbacks.length
+        : 0;
+
+    setRating(average);
+  };
+
+  useEffect(() => {
+    fetchRating();
+  }, [product.id]);
 
   const renderStars = () => {
     const fullStars = Math.floor(rating);

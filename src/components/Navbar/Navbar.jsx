@@ -19,25 +19,26 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY) {
-        // Scrolling down
-        setShowNavbar(false);
-      } else {
-        // Scrolling up
+  
+      if (currentScrollY <= 0) {
+        // Always show navbar at the top
         setShowNavbar(true);
+      } else if (Math.abs(currentScrollY - lastScrollY) > 5) {
+        // Scrolling down
+        if (currentScrollY > lastScrollY) {
+          setShowNavbar(false);
+        } else {
+          setShowNavbar(true);
+        }
       }
-
+  
       setLastScrollY(currentScrollY);
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-
+  
 
   return (
     <nav className={`navbar ${showNavbar ? "show" : "hide"}`}>

@@ -3,12 +3,12 @@
 .product-page {
     min-height: 85vh;
     display: flex;
-    padding: 120px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
 }
   
   .main-product{
     width: 70%;
-    padding-top: 40px;
+    padding-top: 80px;
     min-height: 80vh;
     justify-items: center;
     text-align: center;
@@ -21,24 +21,18 @@
     width: 100%;
     height: 30%;
   }
-  .product-details {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .product-details img {
-    width: 300px;
-    border-radius: 8px;
-  }
+
   
   .product-info {
     max-width: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .product-info h2 {
     font-size: 28px;
-    margin-bottom: 10px;
   }
   
   .product-info p {
@@ -64,9 +58,10 @@
   .recommended{
     width: 30%;
     min-height: 60vh;
+    padding-top: 70px;
   }
   .recommended-title {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
     font-size: 22px;
   }
@@ -78,7 +73,7 @@
   }
 
   .feedback-section {
-    width: 80%;
+    max-width: 80%;
     margin-top: 40px;
   }
   
@@ -92,15 +87,26 @@
   .feedback-form textarea {
     padding: 8px;
     resize: none;
+    font-size: 1rem;
   }
   
   .feedback-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     margin-top: 10px;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
   }
   
   .feedback-item {
     border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
     padding: 10px 0;
+    min-width: 200px;
+    flex-shrink: 0; 
   }
   
 
@@ -110,8 +116,10 @@
     min-height: 85vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    padding: 120px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
 
   }
   .main-product{

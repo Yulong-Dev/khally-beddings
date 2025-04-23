@@ -105,13 +105,20 @@ const ProductPage = () => {
           <div className="image-container">
             <img src={product.image} alt={product.name} />
           </div>
-          <div>
+          <div className="product-info">
             <h2>{product.name}</h2>
-            <div style={{ color: "gold", fontSize: "22px" }}>
-              {Array.from({ length: 5 }).map((_, i) =>
+            
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <div style={{ color: "gold", fontSize: "22px" }}>
+                {Array.from({ length: 5 }).map((_, i) =>
                 i < Math.round(averageRating) ? "★" : "☆"
-              )}
+                )}
+              </div>
+              <span style={{ fontSize: "16px", fontWeight: "bold" }}>
+               {averageRating.toFixed(1)}
+              </span>
             </div>
+
             <p>₦{product.price}</p>
             <p>{product.description}</p>
             <button className="butter" onClick={() => addToCart(product)}>
