@@ -1,6 +1,8 @@
 import React from "react";
 import { useCart } from "../../Context/CartContext";
 import "./ProductCard.css";
+import { Link } from "react-router-dom";
+
 
 const ProductCard = ({ product, rating = 0 }) => {
   const { addToCart } = useCart();
@@ -21,13 +23,13 @@ const ProductCard = ({ product, rating = 0 }) => {
 
   return (
     <div className="product-card">
-      <a href={`/product/${product.id}`}>
+      <Link to={`/product/${product.id}`}>
         <img src={product.image} alt={product.name} style={{ width: "100%" }} />
-      </a>
+      </Link>
       <h3>
-        <a href={`/product/${product.id}`} style={{ textDecoration: "none", color: "#111" }}>
+        <Link to={`/product/${product.id}`} style={{ textDecoration: "none", color: "#111" }}>
           {product.name}
-        </a>
+        </Link>
       </h3>
 
       <div className="product-rating" style={{ color: "gold" }}>

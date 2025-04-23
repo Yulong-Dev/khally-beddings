@@ -78,7 +78,7 @@ const Navbar = () => {
         )}
       </ul>
 
-      <label htmlFor="drop" className='appear'><RiMenu3Fill /></label>
+      <label htmlFor="drop" className='appear' >< RiMenu3Fill  /></label>
       <input type="checkbox" name='' id='drop'/>
       <ul className='dropdown-links'>
         <label htmlFor="drop"><FaWindowClose /></label>

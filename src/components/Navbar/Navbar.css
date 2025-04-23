@@ -231,7 +231,7 @@
     align-content: center;
     width: 100%;
     position: fixed;
-    gap: 4%;
+    gap: 3%;
     height: 10%;
     padding: 0;
     top: 0;
@@ -255,8 +255,7 @@
     text-decoration: none;
   }
   .logo{
-    margin-right: 4%;
-    margin-left: 1%;
+    padding: 3%;
   }
   .logo a{
     color: white;
@@ -269,7 +268,7 @@
     border: 1px solid #ccc;
     border-radius: 20px;
     outline: none;
-    font-size: 0.5rem;
+    font-size: 1rem;
     width: 80px;
     transition: border 0.3s;
   }
@@ -291,7 +290,7 @@
   }
   .baba{
     display: flex;
-    font-size: 25px;
+    font-size: 30px;
   }
   .disappear{
     display: none;
@@ -300,9 +299,9 @@
     display: flex;
     position: fixed;
     top: 30%;
-    right: 5%;
+    right: 4%;
     color: #ffcc00;
-    font-size: 17px;
+    font-size: 24px;
   }
   .dropdown-links{
     height: 220px;
@@ -374,8 +373,7 @@
   }
 
   .logo{
-    margin-right: 5%;
-    margin-left: 5%;
+    padding: 10px;
   }
  
   .logo a{
@@ -389,10 +387,11 @@
     border: 1px solid #ccc;
     border-radius: 20px;
     outline: none;
-    font-size: 0.5rem;
+    font-size: 1rem; 
     width: 80px;
     transition: border 0.3s;
   }
+  
   .search-btn{
     display: none;
   }
@@ -411,18 +410,18 @@
   }
   .baba{
     display: flex;
-    font-size: 25px;
+    font-size: 20px;
   }
   .disappear{
     display: none;
   }
   .appear{
-    display: flex;
     position: fixed;
     top: 30%;
     right: 5%;
     color: #ffcc00;
-    font-size: 17px;
+    font-size: 25px;
+    
   }
   .dropdown-links{
     height: 220px;
