@@ -3,6 +3,7 @@ import { useAuth } from "../../Context/Authentication/AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 import Navbar from "../../components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const { signup } = useAuth();
@@ -129,7 +130,7 @@ const Signup = () => {
           </button>
 
           <p className="redirect-text">
-            Already have an account? <a href="/login">Login</a>
+            Already have an account? <Link to="/login">Login</Link>
           </p>
         </form>
       </div>

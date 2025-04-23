@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../Context/Authentication/AuthContext";
 import "./Login.css";
 import Navbar from "../../components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { login } = useAuth();
@@ -80,11 +81,11 @@ const Login = () => {
           </button>
 
           <p className="redirect-text">
-            Don't have an account? <a href="/signup">Signup</a>
+            Don't have an account? <Link to="/signup">Signup</Link>
           </p>
 
           <p className="redirect-text">
-            <a href="/forgot-password">Forgot Password?</a>
+            <Link to="/forgot-password">Forgot Password?</Link>
           </p>
         </form>
       </div>

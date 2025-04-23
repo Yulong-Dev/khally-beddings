@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./FAQ.css";
 import { IoReturnUpBack } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const faqData = [
   {
@@ -27,7 +28,7 @@ const FAQ = () => {
   return (
     <div className="faq-container">
         <div>
-        <a href="/"><IoReturnUpBack  className="back"/></a>
+        <Link to="/"><IoReturnUpBack  className="back"/></Link>
       <h1>Frequently Asked Questions</h1>
       </div>
       {faqData.map((item, index) => (

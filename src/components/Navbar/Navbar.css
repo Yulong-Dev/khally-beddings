@@ -227,7 +227,7 @@
 @media (max-width:650px){
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     width: 100%;
     position: fixed;
@@ -255,7 +255,8 @@
     text-decoration: none;
   }
   .logo{
-    margin-right: 6%;
+    margin-right: 4%;
+    margin-left: 1%;
   }
   .logo a{
     color: white;
@@ -342,13 +343,12 @@
 }
 }
 
-@media (max-width:360px){
+@media (max-width:340px){
   .navbar {
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    text-align: start;
-    gap: 3%;
+    gap: 2%;
     width: 100%;
     position: fixed;
     height: 10%;
@@ -375,6 +375,7 @@
 
   .logo{
     margin-right: 5%;
+    margin-left: 5%;
   }
  
   .logo a{

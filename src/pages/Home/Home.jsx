@@ -1,20 +1,34 @@
 import React from 'react';
 import "./Home.css";
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
+import { Helmet } from 'react-helmet';
+import Navbar from '../../components/Navbar/Navbar.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import ProductTease from '../../components/Products/ProductTease';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className="home-container">
+          <Helmet>
+        <title>Khally Beddings | Luxury Bedsheets, Towels, and Robes</title>
+        <meta 
+          name="description" 
+          content="Discover luxury bedsheets, soft towels, bathrobes, and more at Khally Beddings. Shop premium home essentials crafted for comfort and elegance." 
+        />
+        <meta 
+          name="keywords" 
+          content="Khally Beddings, luxury bedsheets, cotton towels, soft pillows, bathrobes, bedding store Nigeria" 
+        />
+        <meta name="author" content="Khally Beddings" />
+      </Helmet>
         <Navbar />
        <div className="home">
             <div className="first-home">
                 <h1>Welcome to Khally<span>-</span>Beddings</h1>
                 <h2>Home of Luxurious Beddings, Bath Towels and Robes - A <br/> Quality Choice</h2>
                 <div className="first-home-links">
-                    <a href="/shop">Shop</a>
-                    <a href="/contact">Contact Us</a>
+                    <Link to="/shop">Shop</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </div>
             </div>
             <div className="second-home">
@@ -51,7 +65,7 @@ const Home = () => {
                         <li> Duck down or goose down Packaging:</li>
                         <li> Vaccum packed</li>
                     </ul> 
-                    <a href="/shop"> Shop Now</a>   
+                    <Link to="/shop"> Shop Now</Link>   
                 </div>
                 <div className="pillow">
                     <div className="first-pillow"></div>
@@ -81,7 +95,7 @@ const Home = () => {
                         <li>Styles: Plain, Jacquard, Embroidery</li>
 
                     </ul> 
-                    <a href="/shop"> Shop Now</a>   
+                    <Link to="/shop"> Shop Now</Link>   
                 </div>
             </div>
             <div className="fifth-home">
@@ -97,7 +111,7 @@ const Home = () => {
                         <li>100% cotton velour fabric,380g</li>
                         <li>100% cotton waffle fabric,260gsm</li>
                     </ul> 
-                    <a href="/shop"> Shop Now</a>   
+                    <Link to="/shop"> Shop Now</Link>   
                 </div>
                 <div className="robes">
                     <div className="first-robe"></div>

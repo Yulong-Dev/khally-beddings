@@ -14,6 +14,7 @@ import ForgotPassword from "./pages/ForgotP/ForgotPassword.jsx";
 import { AuthProvider } from "./Context/Authentication/AuthContext.jsx";
 import { CartProvider } from "./Context/CartContext.jsx";
 import { SearchProvider } from "./Context/SearchContext.jsx";
+import Load from "./Context/Load.jsx";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <CartProvider>
        <SearchProvider>
         <Router>
+          <Load/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<CartPage />} />

@@ -60,8 +60,8 @@ const Navbar = () => {
       
 
       <ul className="nav-links">
-        <li className='disappear'><a href="/">Home</a></li>
-        <li className='disappear'><a href="/shop">Shop</a></li>
+        <li className='disappear'><Link to="/">Home</Link></li>
+        <li className='disappear'><Link to="/shop">Shop</Link></li>
         <span className='float'><Link to="/cart"><PiShoppingCart className='cart-icon' /> <span className='count'>{cartItems.length}</span></Link></span>
         {currentUser ? (
           <>
@@ -70,8 +70,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <li className='disappear'><a href="/login">Login</a></li>
-            <li className='disappear'><a href="/signup">Sign Up</a></li>
+            <li className='disappear'><Link to="/login">Login</Link></li>
+            <li className='disappear'><Link to="/signup">Sign Up</Link></li>
             <Link to="/signup"><MdPersonOutline className="baba"/></Link>
 
           </>
@@ -82,9 +82,9 @@ const Navbar = () => {
       <input type="checkbox" name='' id='drop'/>
       <ul className='dropdown-links'>
         <label htmlFor="drop"><FaWindowClose /></label>
-        <li><a href="/">Home</a></li>
-        <li><a href="/shop">Shop</a></li>
-        <li><a href="/contact"> Contact Us</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/shop">Shop</Link></li>
+        <li><Link to="/contact"> Contact Us</Link></li>
 
         {currentUser ? (
           <>

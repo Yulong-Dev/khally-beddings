@@ -1,10 +1,11 @@
 import "./Aboutus.css";
 import { IoReturnUpBack } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Aboutus = () => {
   return (
     <div className="about-container">
-      <a href="/"><IoReturnUpBack className="back" /></a>
+      <Link to="/"><IoReturnUpBack className="back" /></Link>
       <h1>About Khally Beddings</h1>
       <p>
         At Khally Beddings, we believe that a great day starts with a great
