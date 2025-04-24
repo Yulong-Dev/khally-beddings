@@ -23,17 +23,19 @@ const Home = () => {
         <meta name="author" content="Khally Beddings" />
       </Helmet>
 
-      <Navbar />
+        <Navbar />
+
 
       <div className="home">
+
         {/* First Section */}
         <motion.div
-          className="first-home"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
+         <div className="first-home">
           <h1>
             Welcome to Khally<span>-</span>Beddings
           </h1>
@@ -45,16 +47,18 @@ const Home = () => {
             <Link to="/shop">Shop</Link>
             <Link to="/contact">Contact Us</Link>
           </div>
+        </div>
         </motion.div>
 
         {/* Second Section */}
         <motion.div
-          className="second-home"
+          
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
+        <div className="second-home">    
           <div className="bedsheet">
             <div className="first-bedsheet"></div>
             <div className="second-bedsheet"></div>
@@ -79,16 +83,18 @@ const Home = () => {
             </ul>
             <Link to="/shop">Shop Now</Link>
           </div>
+          </div> 
         </motion.div>
 
         {/* Third Section */}
         <motion.div
-          className="third-home"
+          
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
+        <div className="third-home">    
           <div className="pillow-description">
             <h1>Pillow Series</h1>
             <ul>
@@ -109,16 +115,18 @@ const Home = () => {
             <div className="third-pillow"></div>
             <div className="fourth-pillow"></div>
           </div>
+          </div>  
         </motion.div>
 
         {/* Fourth Section */}
         <motion.div
-          className="fourth-home"
+          
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
+        <div className="fourth-home">    
           <div className="towel">
             <div className="first-towel"></div>
             <div className="second-towel"></div>
@@ -140,16 +148,18 @@ const Home = () => {
             </ul>
             <Link to="/shop"> Shop Now</Link>
           </div>
+          </div>
         </motion.div>
 
         {/* Fifth Section */}
         <motion.div
-          className="fifth-home"
+          
           initial={{ opacity: 0, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
+        <div className="fifth-home">   
           <div className="robe-description">
             <h1>Bathrobe Series</h1>
             <ul>
@@ -170,21 +180,14 @@ const Home = () => {
             <div className="third-robe"></div>
             <div className="fourth-robe"></div>
           </div>
-        </motion.div>
-
-        {/* Product Tease Section */}
-        <motion.div
-          className="product-tease"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <ProductTease />
-        </motion.div>
-
-        <Footer />
+          </div> 
+        </motion.div> 
       </div>
+      {/* Product Tease Section */}
+      
+    <ProductTease />
+        
+        <Footer />
     </div>
   );
 };

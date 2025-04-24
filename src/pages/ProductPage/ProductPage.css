@@ -10,8 +10,10 @@
     width: 70%;
     padding-top: 80px;
     min-height: 80vh;
-    justify-items: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .image-container {
     width: 70%;
@@ -24,7 +26,7 @@
 
   
   .product-info {
-    max-width: 500px;
+    max-width: 600px;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -38,7 +40,6 @@
   .product-info p {
     margin: 1rem 0;
     font-size: 16px;
-    line-height: 1.6;
   }
   
   .product-info h4 {
@@ -124,9 +125,11 @@
   }
   .main-product{
     width: 100%;
+    display: flex;
+    flex-direction: column;
     min-height: 50vh;
-    justify-items: center;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .image-container {
     width: 90%;
