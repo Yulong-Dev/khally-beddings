@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import { IoIosEye } from "react-icons/io";
 
 const Signup = () => {
   const { signup } = useAuth();
@@ -114,15 +115,12 @@ const Signup = () => {
               placeholder="Confirm Password"
               value={form.confirmPassword}
               onChange={handleChange}
-            />
+            /> 
 
-            <label className="show-password">
-              <input
-                type="checkbox"
-                onChange={() => setShowPassword(!showPassword)}
-              />
-              <p>Show Password</p>
-            </label>
+            <IoIosEye 
+             className="show-password"
+            onClick={() => setShowPassword(!showPassword)}
+            />
           </div>
 
           <button type="submit" disabled={loading}>

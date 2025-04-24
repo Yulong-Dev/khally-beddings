@@ -4,6 +4,7 @@ import { useAuth } from "../../Context/Authentication/AuthContext";
 import "./Login.css";
 import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import { IoIosEye } from "react-icons/io";
 
 const Login = () => {
   const { login } = useAuth();
@@ -66,14 +67,10 @@ const Login = () => {
               onChange={handleChange}
             />
 
-            <label className="show-password">
-              <input
-                type="checkbox"
-                onChange={() => setShowPassword(!showPassword)}
-                className="show-password-checkbox"
-              />
-              Show Password
-            </label>
+            <IoIosEye 
+            className="show-password"
+            onClick={() => setShowPassword(!showPassword)}
+            />
           </div>
 
           <button type="submit" disabled={loading}>
