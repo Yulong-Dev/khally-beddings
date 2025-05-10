@@ -24,7 +24,7 @@ function App() {
       <CartProvider>
        <SearchProvider>
         <Router>
-          <Load/>
+          <Load>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<CartPage />} />
@@ -39,10 +39,11 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
 
           </Routes>
+          </Load>
         </Router>
         </SearchProvider>
       </CartProvider>
-    </AuthProvider>
+    </AuthProvider> 
   );
 }
 
